@@ -1,0 +1,54 @@
+extends ../main.pug
+
+block meta
+  +meta({
+    robots: "index, follow"
+  })
+
+block content
+  div.flex.justify-center
+    .container.flex.flex-col.m-4.p-4.ease-in-out.max-w-xl(class="md:transition-all md:max-w-2xl")
+      div.border-2.border-solid.border-info.rounded-xl.p-6.flex.justify-center
+        article.prose.space-y-5
+          h1 AstroByte Best File Uploader
+          div
+            p.font-bold Welcome to AstroByte — the King and Queen of file-sharing services!
+            p We’re not just another platform for uploading and transferring files.
+            p We are the gold standard of speed, reliability, and convenience. While others promise, we deliver.
+            p Our servers? So powerful and fast, they make competitors nervously reboot.
+            p Upload anything — from memes to massive archives — instantly and without limits. Share with a single click and rest easy knowing your data is armored.
+
+          div.border-2.border-dashed.border-info.rounded-xl.p-6
+            p.font-bold.mt-0 Why choose us?
+            ul.mb-0
+              li 
+                span.font-medium Speed that leaves even light jealous
+                | &nbsp;— we leverage cutting-edge hardware and optimized protocols.
+              li 
+                span.font-medium Reliability on par with a Swiss bank
+                | &nbsp;— your files are stored and transferred flawlessly.
+              li 
+                span.font-medium A seamless interface
+                | &nbsp;— intuitive enough even for first-time internet users.
+              li 
+                span.font-medium Uncompromising security
+                | &nbsp;— encryption worthy of a blockbuster movie plot.
+
+          div
+            p.font-bold AstroByte — because compromises are for the slow.
+            p Welcome to a place where files fly, and you just sit back and relax!
+            
+      div.border-2.border-solid.border-success.rounded-xl.p-6.flex.justify-center.mt-5.mb-5
+        article.prose.space-y-5
+          h2 Try our speedy servers to upload your files
+          div
+            a.no-underline(href="https://uploader-se-1.astrobyte.su")
+              div.border-2.border-dashed.border-success.rounded-xl.px-6.py-3.text-center.cursor-pointer.transition.duration-300.ease-in-out.px-5.py-2(class="hover:bg-base-200")
+                span AstroByte Sweden #1
+          div
+            a.no-underline(href="https://uploader-de-1.astrobyte.su")
+              div.border-2.border-dashed.border-success.rounded-xl.px-6.py-3.text-center.cursor-pointer.transition.duration-300.ease-in-out.px-5.py-2(class="hover:bg-base-200")
+                span AstroByte Germany #1
+
+  style.
+    #footer-love {margin-bottom: 2.5rem;}

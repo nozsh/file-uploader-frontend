@@ -1,0 +1,18 @@
+div.flex.justify-center.text-center#footer-love
+  div.flex-col.text-sm
+    div
+      span.text-nowrap Upload and Share files
+    div
+      span by&nbsp;
+      span.font-medium AstroByte
+      span &nbsp;with&nbsp;
+      span.font-medium ❤️
+
+div.pointer-events-none.fixed.bottom-1(class="left-1/2 transform -translate-x-1/2 sm:left-5 sm:translate-x-0")
+  div.text-base-content.opacity-25.text-sm
+    span AstroByte
+    span &nbsp;&copy;&nbsp;
+    span#footer-year
+
+script.
+  document.getElementById("footer-year").textContent = new Date().getFullYear();

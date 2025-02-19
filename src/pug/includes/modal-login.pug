@@ -1,0 +1,22 @@
++modal({ id: "modal_login", modal_class: "", modalBox_class: ""})
+  div.space-y-3
+    label.input.input-bordered.flex.items-center.gap-2
+      +game-icons-astronaut-helmet("w-5 h-5")
+      input.grow(type="text" placeholder="Username")#username_input
+    label.input.input-bordered.flex.items-center.gap-2
+      +game-icons-star-gate("w-5 h-5")
+      input.grow(type="password" value="" placeholder="Password")#password_input
+
+  div.flex.gap-2.mt-3
+    button.btn.btn-success.text-white.flex-1#login_btn Login
+
+    button.hidden.btn.btn-square#login_status_btn
+      span.loading.loading-spinner
+
+    button.btn.btn-info.text-white.flex-auto#registration_btn Register
+  
+  div.hidden.border-2.border-solid.border-error.text-error.rounded-xl.p-6.mt-3.text-center.transition.duration-300.ease-in-out(class="hover:bg-base-200")#error_message
+    span.font-medium The Username or Password is Incorrect
+
+  div.hidden.border-2.border-solid.border-info.text-info.rounded-xl.p-6.mt-3.text-center.transition.duration-300.ease-in-out(class="hover:bg-base-200")#register_message
+      span.font-medium Registration temporarily disabled
