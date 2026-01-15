@@ -1,0 +1,21 @@
+extends ../main.pug
+
+block meta
+  +meta({
+    robots: "index, follow",
+    title: "AstroByte File Uploader [RU-VENUS]",
+  })
+
+block content
+  div.flex.justify-center
+    .container.flex.flex-col.m-4.p-4.ease-in-out.max-w-xl(class="justify-center md:transition-all md:max-w-lg" style="height: calc(80vh - 10px);")
+      div.flex.justify-center.mb-10
+        +server-name("RU-VENUS")
+
+      include ../includes/drag-and-drop.pug
+      
+      include ../includes/modal-warn.pug
+      include ../includes/modal-login.pug
+
+block scripts
+  script(type="module" src="/src/ts/app.ts" defer)
