@@ -22,10 +22,10 @@
   },
   "parcel-namer-rewrite": {
     "rules": {
-      "(.*).css": "dev_$1.{hash}.css",
-      "(.*).js": "dev_$1.{hash}.js"
+      "(.*).css": "{hash}.css",
+      "(.*).js": "{hash}.js"
     },
-    "silent": true
+    "silent": false
   },
   "devDependencies": {
     "@parcel/core": "^2.13.3",
