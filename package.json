@@ -14,18 +14,18 @@
   "author": "",
   "license": "ISC",
   "parcelIgnore": [
-    "assets/.+"
+    "src-assets/.+"
   ],
   "staticFiles": {
-    "staticPath": "assets",
-    "staticOutPath": "assets"
+    "staticPath": "src-assets",
+    "staticOutPath": "src-assets"
   },
   "parcel-namer-rewrite": {
     "rules": {
-      "(.*).css": "{hash}.css",
-      "(.*).js": "{hash}.js"
+      "(.*).css": "dev_$1.{hash}.css",
+      "(.*).js": "dev_$1.{hash}.js"
     },
-    "silent": false
+    "silent": true
   },
   "devDependencies": {
     "@parcel/core": "^2.13.3",
